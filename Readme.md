@@ -96,19 +96,6 @@ Saved the best-performing Logistic Regression model using **Joblib** for future 
 
 ---
 
-## Repository Structure
-
-```
-Customer-Churn-Prediction/
-│
-├── Customer_Churn_Prediction.ipynb
-├── WA_Fn-UseC_-Telco-Customer-Churn.csv
-├── customer_churn_model.pkl
-└── README.md
-```
-
----
-
 ## Future Improvements
 
 - Deploy the model as a web application using Flask or FastAPI.

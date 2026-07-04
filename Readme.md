@@ -1,31 +1,20 @@
 # 📊 Customer Churn Prediction using Machine Learning
 
-## 📌 Project Overview
+## About the Project
 
-Customer churn is one of the biggest challenges for subscription-based businesses. This project uses Machine Learning to predict whether a customer is likely to leave a telecom service based on customer demographics, account details, and service usage.
+Customer churn is a major challenge for telecom companies because losing customers directly affects business growth. In this project, I built a machine learning model to predict whether a customer is likely to leave a telecom service based on customer information and the services they use.
 
-The project follows a complete machine learning workflow including data preprocessing, exploratory data analysis (EDA), feature encoding, feature scaling, model training, hyperparameter tuning, and model evaluation.
-
----
-
-## 🎯 Objective
-
-The objective of this project is to build and compare multiple machine learning models to accurately predict customer churn and identify the best-performing classifier.
+The project follows a complete machine learning workflow, starting from data preprocessing and exploratory data analysis (EDA) to model training, evaluation, and saving the best-performing model.
 
 ---
 
-## 📂 Dataset
+## Dataset
 
-**Dataset:** Telco Customer Churn Dataset
-
-The dataset contains customer information such as:
+This project uses the **Telco Customer Churn Dataset**, which contains customer information such as:
 
 - Gender
 - Senior Citizen
-- Partner
-- Dependents
-- Tenure
-- Phone Service
+- Partner and Dependents
 - Internet Service
 - Contract Type
 - Monthly Charges
@@ -34,71 +23,68 @@ The dataset contains customer information such as:
 
 ---
 
-## ⚙️ Project Workflow
+## Project Workflow
 
-### 1. Data Loading
-- Imported required Python libraries.
-- Loaded the Telco Customer Churn dataset.
+### 1. Data Exploration
+- Loaded the dataset using Pandas.
+- Explored the data using `.head()`, `.info()`, `.describe()`, and checked for missing values.
 
-### 2. Data Exploration
-- Checked dataset shape, information, descriptive statistics, and missing values.
-
-### 3. Data Preprocessing
+### 2. Data Preprocessing
 - Removed unnecessary columns.
 - Handled missing values.
 - Converted data types.
 - Encoded categorical variables.
-- Split features and target variable.
+- Split the dataset into features and target.
 
-### 4. Exploratory Data Analysis (EDA)
-- Churn distribution
+### 3. Exploratory Data Analysis (EDA)
+Performed visual analysis to better understand the dataset, including:
+- Customer churn distribution
 - Numerical feature distributions
 - Contract Type vs Churn
 - Internet Service vs Churn
 - Correlation analysis
 
-### 5. Feature Scaling
-- Applied StandardScaler to numerical features.
+### 4. Feature Scaling
+Applied **StandardScaler** to scale numerical features before training machine learning models.
 
-### 6. Model Training
-The following Machine Learning models were trained:
+### 5. Model Training
+Trained and compared the following classification models:
 
 - Logistic Regression
 - Decision Tree
 - Random Forest
 - K-Nearest Neighbors (KNN)
 
-### 7. Hyperparameter Tuning
-- Improved model performance using GridSearchCV.
+### 6. Hyperparameter Tuning
+Improved model performance using **GridSearchCV**.
 
-### 8. Model Evaluation
-Models were evaluated using:
-
+### 7. Model Evaluation
+Compared all models using:
 - Accuracy
 - Precision
 - Recall
 - F1-Score
 - Confusion Matrix
 
-### 9. Model Saving
-- Saved the trained Logistic Regression model using Joblib.
+### 8. Model Saving
+Saved the best-performing Logistic Regression model using **Joblib** for future use.
 
 ---
 
-## 📈 Results
+## Results
 
 | Model | Accuracy |
-|---------|----------|
+|--------|----------|
 | Logistic Regression | **80.38%** |
-| Decision Tree | **73.60%** |
 | Random Forest | **79.10%** |
 | K-Nearest Neighbors | **75.40%** |
+| Decision Tree | **73.60%** |
 
 **Best Performing Model:** Logistic Regression
 
 ---
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 - Python
 - Pandas
@@ -110,7 +96,7 @@ Models were evaluated using:
 
 ---
 
-## 📁 Project Structure
+## Repository Structure
 
 ```
 Customer-Churn-Prediction/
@@ -123,23 +109,20 @@ Customer-Churn-Prediction/
 
 ---
 
-## 🚀 Future Improvements
+## Future Improvements
 
-- Deploy the model using Flask or FastAPI.
-- Build an interactive web application.
-- Experiment with XGBoost and LightGBM.
-- Perform feature selection for improved performance.
+- Deploy the model as a web application using Flask or FastAPI.
+- Try advanced machine learning algorithms such as XGBoost.
+- Improve prediction performance through additional feature engineering and tuning.
 
 ---
 
-## 👩‍💻 Author
+## Author
 
 **Aleesha Shafique**
 
-BS Information Technology Student
-
-Aspiring AI/ML Engineer
+BS Information Technology Student | Aspiring AI/ML Engineer
 
 GitHub: https://github.com/Aleesha-1
 
-LinkedIn: https://www.linkedin.com/in/aleesha-shafique/
+LinkedIn: https://www.linkedin.com/in/aleesha-shafique
